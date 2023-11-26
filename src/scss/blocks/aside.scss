@@ -1,0 +1,86 @@
+.to-know-more {
+	margin: auto;
+	max-width: 320px;
+	margin-top: 479px;
+	background: linear-gradient(-45deg, transparent 35px, $yellow 0) right, linear-gradient(135deg, transparent 35px, $yellow 0) left;
+	background-size: 51% 99%;
+	background-repeat: no-repeat;
+	height: 207px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+}
+
+.to-know-more__text {
+	font-family: Archangelsk;
+	font-weight: 400;
+  font-size: 30px;
+  line-height: 30.63px;
+	text-align: center;
+}
+
+.to-know-more__button {
+	padding: 19px 50px;
+	font-family: Roboto;
+	font-weight: 700;
+  font-size: 20px;
+	color: $yellow;
+	background-color: $black;
+}
+
+.to-know-more__button:focus {
+	background-color: $gray;
+}
+	
+.to-know-more__button:active {
+	background-color: $gray;
+}
+
+
+@media (min-width: 768px) {
+	.to-know-more {
+		max-width: 470px;
+    height: 278px;
+    margin-left: 278px;
+    margin-top: 421px;
+	}
+	
+	.to-know-more__text {
+		font-size: 46px;
+		line-height: 46px;
+		padding-left: 46px;
+		text-align: start;
+	}
+	
+	.to-know-more__button {
+		font-size: 24px;
+		margin-right: 107px;
+	}
+}
+
+@media (min-width: 1200px) {
+	.to-know-more {
+		max-width: 624px;
+    height: 369px;
+		margin-left: 562px;
+    margin-top: 577px;
+	}
+	
+	.to-know-more__text {
+		font-size: 62px;
+    line-height: 63px;
+		width: 484px;
+		margin: 0 auto;
+		padding-left: 0;
+	}
+	
+	.to-know-more__button {
+		height: 78px;
+		margin-right: 209px;
+	}
+	
+	.to-know-more__button:hover {
+		background-color: $gray;
+	}
+}

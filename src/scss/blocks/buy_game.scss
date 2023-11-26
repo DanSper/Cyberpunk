@@ -1,0 +1,139 @@
+.buy-game {
+	background: $black;
+	padding: 17px;
+}
+
+.container-buy-game__image {
+	height: 198px;
+	background-color: $black;
+	background-image: url("../assets/images/images_src/many_disks.jpg");
+}
+
+.buy-game__title {
+	font-family: Archangelsk;
+	font-size: 30px;
+	font-weight: 400;
+	line-height: 31px;
+	color: $white;
+	margin-top: 20px;
+}
+
+.buy-game__untitle {
+	font-family: Roboto;
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 23px;
+	color: $blue;
+	margin: 25px 0;
+}
+
+.paramets__list {
+	margin-left: 25px;
+}
+
+.paramets__list li {
+	font-family: Roboto;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 19px;
+	color: $white;
+	padding: 5px;
+}
+
+.paramets__list li:nth-child(1) {
+	list-style-image: url("../assets/images/images_src/buy_game_icon_for_1_li.svg");
+}
+
+.paramets__list li:nth-child(2) {
+	list-style-image: url("../assets/images/images_src/buy_game_icon_for_2_li.svg");
+}
+
+.paramets__list li:nth-child(3) {
+	list-style-image: url("../assets/images/images_src/buy_game_icon_for_3_li.svg");
+}
+
+.logos-platforms {
+	max-width: 288px;
+}
+
+.logos-platforms__img {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 37px;
+	&--first-container a {
+		height: 41px;
+	}
+	&--second-container a {
+		height: 55px;
+	}
+	&--ps-logo {
+		padding-top: 14px;
+	}
+}
+
+.logos-platforms__img a:focus {
+	background-color: $gray;
+}
+
+.logos-platforms__img a:active {
+	background-color: $pink;
+}
+
+
+
+@media (min-width: 768px) {
+	.container-buy-game {
+		display: flex;
+    background: black;
+	}
+	
+	.container-buy-game__image {
+		background-image: url("../assets/images/images_src/many_disks_tablet.jpg");
+		width: 256px;
+		height: 555px;
+	}
+	
+	.buy-game__title {
+		font-size: 48px;
+		line-height: 47px;
+	}
+}
+
+@media (min-width: 1200px) {
+	.container-buy-game {
+		height: 717px;
+	}
+
+	.container-buy-game__image {
+		background-image: url("../assets/images/images_src/many_disks_desktop.jpg");
+		width: 49vw;
+		height: 717px;
+	}
+	
+	.buy-game {
+		display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+		padding-left: 37px;
+	}
+	
+	.buy-game__title {
+		font-size: 62px;
+		line-height: 63.3px;
+		max-width: 624px;
+	}
+	
+	.buy-game__untitle {
+		font-size: 24px;
+		line-height: 28px;
+	}
+	
+	.paramets__list li {
+		font-size: 18px;
+		line-height: 21px;
+	}
+	
+	.logos-platforms__img a:hover {
+		border-bottom: 1px solid $yellow;		
+	}
+}
