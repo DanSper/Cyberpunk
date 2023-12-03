@@ -14,7 +14,7 @@
 }
 
 .container-action-logo {
-	margin: auto;
+	margin: 0 auto;
 	max-width: 286px;
 	&--position {
 		position: relative;
@@ -97,7 +97,8 @@
 	border: 1px dashed $gray;
 }
 
-.forms__input-file span {
+.forms__input-file button {
+	background-color: $black;
 	color: $white;
 	border-bottom: 1px solid $white;
 	position: relative;
@@ -124,7 +125,7 @@
 }
 
 .button {
-	padding: 15px 50px 15px 50px;
+	padding: 15px 50px;
 	height: 60px;
 	width: 182px;
 	font-family: Roboto;
@@ -204,6 +205,10 @@
 	
 	.forms__input-file {
 		width: 346px;
+	}
+	
+	.forms__input-file button {
+		left: 80px;
 	}
 
 	.button {
