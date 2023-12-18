@@ -1,14 +1,19 @@
-.container-advertising-background{
+.advertising__container{
 	background: $yellow;
 }
 
-.container-advertising {
+.advertising {
 	padding: 17px;
 }
 
 .images-advertising {
+	display: flex;
 	width: 286px;
-	margin: auto;
+	margin: 0 auto;
+	margin-bottom: 20px;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
 }
 
 .images-advertising__container-logo-hp {
@@ -77,11 +82,11 @@ description-advertising {
 }
 
 @media (min-width: 768px) {
-	.container-advertising-background {
+	.advertising__container {
 		padding-bottom: 43px;
 	}
 
-	.container-advertising {
+	.advertising {
 		min-width: 768px;
     display: flex;
     justify-content: space-evenly;
@@ -90,12 +95,9 @@ description-advertising {
 	}
 	
 	.images-advertising {
-    display: flex;
     width: auto;
 		height: 529px;
     flex-direction: column;
-		justify-content: space-between;
-		align-items: center;
 		margin-top: 76px;
 	}
 	
@@ -145,13 +147,13 @@ description-advertising {
 }
 
 @media (min-width: 1200px) {
-	.container-advertising-background {
+	.advertising__container {
     padding-bottom: 107px;
 		padding-top: 50px;
 		margin-top: -1px;
 	}
 
-	.container-advertising {
+	.advertising {
 		min-width: 1200px;
     max-width: 1258px;
 		padding: 5px;
@@ -159,7 +161,6 @@ description-advertising {
 
 	.images-advertising {
 		flex-direction: row;
-    flex-wrap: wrap;
 		max-width: 580px;
     justify-content: space-evenly;
 		align-content: space-between;

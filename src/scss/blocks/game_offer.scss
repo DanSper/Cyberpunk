@@ -1,15 +1,15 @@
-.buy-game {
+.game-offer {
 	background: $black;
 	padding: 17px;
 }
 
-.container-buy-game__image {
+.game-offer__image-wrap {
 	height: 198px;
 	background-color: $black;
 	background-image: url("../assets/images/images_src/many_disks.jpg");
 }
 
-.buy-game__title {
+.game-offer__title {
 	font-family: Archangelsk;
 	font-size: 30px;
 	font-weight: 400;
@@ -18,7 +18,7 @@
 	margin-top: 20px;
 }
 
-.buy-game__untitle {
+.game-offer__subtitle {
 	font-family: Roboto;
 	font-size: 20px;
 	font-weight: 700;
@@ -31,25 +31,22 @@
 	margin-left: 25px;
 }
 
-.paramets__list li {
+.list_item {
 	font-family: Roboto;
 	font-size: 16px;
 	font-weight: 400;
 	line-height: 19px;
 	color: $white;
 	padding: 5px;
-}
-
-.paramets__list li:nth-child(1) {
-	list-style-image: url("../assets/images/images_src/buy_game_icon_for_1_li.svg");
-}
-
-.paramets__list li:nth-child(2) {
-	list-style-image: url("../assets/images/images_src/buy_game_icon_for_2_li.svg");
-}
-
-.paramets__list li:nth-child(3) {
-	list-style-image: url("../assets/images/images_src/buy_game_icon_for_3_li.svg");
+	&--icon-disk {
+		list-style-image: url("../assets/images/images_src/buy_game_icon_for_1_li.svg");
+	}
+	&--icon-disk-code {
+		list-style-image: url("../assets/images/images_src/buy_game_icon_for_2_li.svg");
+	}
+	&--icon-info {
+		list-style-image: url("../assets/images/images_src/buy_game_icon_for_3_li.svg");
+	}
 }
 
 .logos-platforms {
@@ -82,53 +79,52 @@
 
 
 @media (min-width: 768px) {
-	.container-buy-game {
+	.game-offer__container {
 		display: flex;
     background: black;
 	}
 	
-	.container-buy-game__image {
+	.game-offer__image-wrap {
 		background-image: url("../assets/images/images_src/many_disks_tablet.jpg");
 		width: 256px;
-		height: 555px;
+		height: auto;
 	}
 	
-	.buy-game__title {
+	.game-offer__title {
 		font-size: 48px;
 		line-height: 47px;
 	}
 }
 
 @media (min-width: 1200px) {
-	.container-buy-game {
+	.game-offer__container {
 		height: 717px;
 	}
 
-	.container-buy-game__image {
+	.game-offer__image-wrap {
 		background-image: url("../assets/images/images_src/many_disks_desktop.jpg");
 		width: 49vw;
-		height: 717px;
 	}
 	
-	.buy-game {
+	.game-offer {
 		display: flex;
     flex-direction: column;
     justify-content: space-evenly;
 		padding-left: 37px;
 	}
 	
-	.buy-game__title {
+	.game-offer__title {
 		font-size: 62px;
 		line-height: 63.3px;
 		max-width: 624px;
 	}
 	
-	.buy-game__untitle {
+	.game-offer__subtitle {
 		font-size: 24px;
 		line-height: 28px;
 	}
 	
-	.paramets__list li {
+	.list_item {
 		font-size: 18px;
 		line-height: 21px;
 	}

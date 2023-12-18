@@ -12,3 +12,17 @@ button {
 input[type="button"] {
 	cursor: pointer;
 }
+
+@font-face {
+  font-family: Roboto;
+  src: url(../assets/fonts/fonts_build/roboto_regular.woff2) format("woff2"), url(../assets/fonts/fonts_build/roboto_regular.woff) format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Archangelsk;
+  src: url(../assets/fonts/fonts_build/ofont.ru_Archangelsk.woff2) format("woff2"), url(../assets/fonts/fonts_build/ofont.ru_Archangelsk.woff) format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
